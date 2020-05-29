@@ -15,10 +15,10 @@ namespace Kalkulator
             Console.WriteLine("Введите второе число:");
             var b = Console.ReadLine();
             Console.WriteLine("Задайте знак:\n(/ деление;* умножение;- вычитание;+ сложение)");
-            var znak = Console.ReadLine();
             bool znak = true;
-            if znak 
-
+            if ();
+             
+    
 
 
         }
