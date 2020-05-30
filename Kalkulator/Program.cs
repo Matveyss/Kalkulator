@@ -11,23 +11,20 @@ namespace Kalkulator
         static void Main(string[] args)
         {
             Console.WriteLine("Введите первое число:");
-            var a = Console.ReadLine();
+            var a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число:");
-            var b = Console.ReadLine();
+            var b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Задайте знак:\n(/ деление;* умножение;- вычитание;+ сложение)");
             var znak = Console.ReadLine();
-            if (-);
-            Console.WriteLine($"{a - b}");
-            else;
-            if (+);
-            Console.WriteLine($"{a + b}");
-            else;
-            if (/);
-            Console.WriteLine($"{a / b}");
-            else;
-            if (*);
-            Console.WriteLine($"{a * b}");
-
+            if (znak == "-")
+                Console.WriteLine($"Результат {a - b}");
+            else if (znak == "+")
+                Console.WriteLine($"Результат {a + b}");
+            else if (znak == "/")
+                Console.WriteLine($"Результат {a / b}");
+            else if (znak == "*")
+                Console.WriteLine($"Результат {a * b}");
+            Console.ReadKey();
 
 
 
