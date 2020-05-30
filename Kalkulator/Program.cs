@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,14 +17,20 @@ namespace Kalkulator
             var b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Задайте знак:\n(/ деление;* умножение;- вычитание;+ сложение)");
             var znak = Console.ReadLine();
-            if (znak == "-")
-                Console.WriteLine($"Результат {a - b}");
-            else if (znak == "+")
-                Console.WriteLine($"Результат {a + b}");
-            else if (znak == "/")
-                Console.WriteLine($"Результат {a / b}");
-            else if (znak == "*")
-                Console.WriteLine($"Результат {a * b}");
+            while (znak != "+" || znak != "-" || znak != "*" || znak != "/")
+            {
+                Console.WriteLine("Задайте знак:\n(/ деление;* умножение;- вычитание;+ сложение)");
+                znak = Console.ReadLine();
+                if (znak == "-")
+                    Console.WriteLine($"Результат {a - b}");
+                else if (znak == "+")
+                    Console.WriteLine($"Результат {a + b}");
+                else if (znak == "/")
+                    Console.WriteLine($"Результат {a / b}");
+                else if (znak == "*")
+                    Console.WriteLine($"Результат {a * b}");
+                
+            }
             Console.ReadKey();
 
 
